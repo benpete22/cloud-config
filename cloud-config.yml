@@ -1,3 +1,12 @@
 #cloud-config
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0vuQsRYPjsHGiwU3yURjzIYbmtJdBySTE1hyLLC8ylI9mdsIKdAo/adYNL4XW/s58GhgODxf16snSpa1OP11QfK0alADbSEk3MvmdxAN1uGiB5thNug1LDjvg6IcQDEilOB6r7UWZcl2YMTq5vXNu/Bki7L2VMjeR5wAMf8ci90c36uuElRCL43ceXREcS4jsr7jgfWmX4JFKUeHpnyIOl+aLegMoI3Cgv4ROBrDLw/MmPRCrcfTyoZCFeNWdveka4yFBgQSjI36WBQfbH+wJBwVIu2dHnxifcJ9IOd88euM1VsFPXBhTj2NY8BOy3EZqwquH3qu5aj5CQ3R9uG3z narwal@UbuntuMgmt
+mounts:
+- - 10.0.0.201:/mnt/lake
+  - /mnt/zfs
+  - nfs4
+  - ""
+- - 10.0.0.201:/mnt/tank
+  - /mnt/tank
+  - nfs4
+  - ""
